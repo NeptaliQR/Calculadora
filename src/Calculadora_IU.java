@@ -152,7 +152,7 @@ public class Calculadora_IU extends javax.swing.JFrame {
         double nro1=Double.parseDouble(txtNro1.getText());
         double nro2=Double.parseDouble(txtNro2.getText());
         double divicion=nro1/nro2;
-        JOptionPane.showMessageDialog(this, "La Divicion es: " + divicion);
+        JOptionPane.showMessageDialog(this, "EL Total de la Divicion es: " + divicion);
     }//GEN-LAST:event_btnDividirActionPerformed
 
     /**
