@@ -37,6 +37,8 @@ public class Calculadora_IU extends javax.swing.JFrame {
         btnResta = new javax.swing.JButton();
         btnMultiplicar = new javax.swing.JButton();
         btnDividir = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -72,6 +74,10 @@ public class Calculadora_IU extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setText("Limpiar");
+
+        jButton2.setText("Cerrar");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -95,7 +101,11 @@ public class Calculadora_IU extends javax.swing.JFrame {
                                 .addComponent(btnMultiplicar)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(btnDividir)
-                                .addGap(0, 40, Short.MAX_VALUE))
+                                .addGap(18, 18, 18)
+                                .addComponent(jButton1)
+                                .addGap(18, 18, 18)
+                                .addComponent(jButton2)
+                                .addGap(0, 0, Short.MAX_VALUE))
                             .addComponent(txtNro2))))
                 .addContainerGap())
         );
@@ -115,7 +125,9 @@ public class Calculadora_IU extends javax.swing.JFrame {
                     .addComponent(btnSumar)
                     .addComponent(btnResta)
                     .addComponent(btnMultiplicar)
-                    .addComponent(btnDividir))
+                    .addComponent(btnDividir)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -195,6 +207,8 @@ public class Calculadora_IU extends javax.swing.JFrame {
     private javax.swing.JButton btnMultiplicar;
     private javax.swing.JButton btnResta;
     private javax.swing.JButton btnSumar;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JTextField txtNro1;
