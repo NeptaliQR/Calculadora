@@ -127,7 +127,8 @@ public class Calculadora_IU extends javax.swing.JFrame {
         double nro1=Double.parseDouble(txtNro1.getText());
         double nro2=Double.parseDouble(txtNro2.getText());
         double suma=nro1+nro2;
-        JOptionPane.showMessageDialog(this, "La Suma es: " + suma);
+        JOptionPane.showMessageDialog(this, "El total de la Suma es: " + suma);
+        
     }//GEN-LAST:event_btnSumarActionPerformed
 
     private void btnRestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestaActionPerformed
