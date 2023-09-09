@@ -144,7 +144,7 @@ public class Calculadora_IU extends javax.swing.JFrame {
         double nro1=Double.parseDouble(txtNro1.getText());
         double nro2=Double.parseDouble(txtNro2.getText());
         double multiplicacion=nro1*nro2;
-        JOptionPane.showMessageDialog(this, "La Multiplicacion es: " + multiplicacion);
+        JOptionPane.showMessageDialog(this, "El total de la Multiplicacion es: " + multiplicacion);
     }//GEN-LAST:event_btnMultiplicarActionPerformed
 
     private void btnDividirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDividirActionPerformed
