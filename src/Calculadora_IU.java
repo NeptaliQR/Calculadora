@@ -19,6 +19,10 @@ public class Calculadora_IU extends javax.swing.JFrame {
     public Calculadora_IU() {
         initComponents();
     }
+    public void limpiarTodo() {
+        txtNro1.setText("");
+        txtNro2.setText("");
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -37,8 +41,8 @@ public class Calculadora_IU extends javax.swing.JFrame {
         btnResta = new javax.swing.JButton();
         btnMultiplicar = new javax.swing.JButton();
         btnDividir = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnLimpiar = new javax.swing.JButton();
+        btnCerrar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -74,9 +78,14 @@ public class Calculadora_IU extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setText("Limpiar");
+        btnLimpiar.setText("Limpiar");
+        btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLimpiarActionPerformed(evt);
+            }
+        });
 
-        jButton2.setText("Cerrar");
+        btnCerrar.setText("Cerrar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -102,9 +111,9 @@ public class Calculadora_IU extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(btnDividir)
                                 .addGap(18, 18, 18)
-                                .addComponent(jButton1)
+                                .addComponent(btnLimpiar)
                                 .addGap(18, 18, 18)
-                                .addComponent(jButton2)
+                                .addComponent(btnCerrar)
                                 .addGap(0, 0, Short.MAX_VALUE))
                             .addComponent(txtNro2))))
                 .addContainerGap())
@@ -126,8 +135,8 @@ public class Calculadora_IU extends javax.swing.JFrame {
                     .addComponent(btnResta)
                     .addComponent(btnMultiplicar)
                     .addComponent(btnDividir)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(btnLimpiar)
+                    .addComponent(btnCerrar))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -167,6 +176,11 @@ public class Calculadora_IU extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(this, "EL Total de la Divicion es: " + divicion);
     }//GEN-LAST:event_btnDividirActionPerformed
 
+    private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
+        // TODO add your handling code here:
+        limpiarTodo();
+    }//GEN-LAST:event_btnLimpiarActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -203,12 +217,12 @@ public class Calculadora_IU extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnCerrar;
     private javax.swing.JButton btnDividir;
+    private javax.swing.JButton btnLimpiar;
     private javax.swing.JButton btnMultiplicar;
     private javax.swing.JButton btnResta;
     private javax.swing.JButton btnSumar;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JTextField txtNro1;
