@@ -136,7 +136,7 @@ public class Calculadora_IU extends javax.swing.JFrame {
         double nro1=Double.parseDouble(txtNro1.getText());
         double nro2=Double.parseDouble(txtNro2.getText());
         double resta=nro1-nro2;
-        JOptionPane.showMessageDialog(this, "La resta es: " + resta);
+        JOptionPane.showMessageDialog(this, "El total de la resta es: " + resta);
     }//GEN-LAST:event_btnRestaActionPerformed
 
     private void btnMultiplicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultiplicarActionPerformed
